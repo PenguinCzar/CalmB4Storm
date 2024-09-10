@@ -15,6 +15,6 @@ public class rotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        wheel.transform.Rotate(0,0,rotateWheel);
+        wheel.transform.Rotate(rotateWheel,0,0);
     }
 }
