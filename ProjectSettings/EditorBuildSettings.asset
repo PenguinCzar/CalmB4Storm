@@ -8,4 +8,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/CaveDay1.unity
+    guid: 59ef067aae4a3454e9053930fbbab07e
   m_configObjects: {}
