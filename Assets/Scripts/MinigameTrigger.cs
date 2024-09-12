@@ -11,12 +11,15 @@ public class MinigameTrigger : MonoBehaviour {
     public GameObject obj;
     public bool touched;
     public float timeDelay;
-    public int GameName;
+    public string GameName;
     public TMP_Text instructionsText;
     public string GameInstructions;
+    public GameObject gameManager;
+    public GameObject miniGameObj;
     // Start is called before the first frame update
     void Start() {
         instructionsText.text = GameInstructions;
+        
     }
 
     // Update is called once per frame
@@ -50,7 +53,9 @@ public class MinigameTrigger : MonoBehaviour {
         if (other.tag == "Wagon") {
             //instructionsText.gameObject.SetActive(true);
             if (Input.GetKey(KeyCode.X)) {
-                SceneManager.LoadScene(GameName);
+
+                gameManager.SetActive(false);
+                miniGameObj.SetActive(true);
             }
         }
     }
