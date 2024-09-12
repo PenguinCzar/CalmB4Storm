@@ -33,7 +33,7 @@ public class MinigameTrigger : MonoBehaviour {
         if (!touched) {
             obj.transform.position += spd;
         } else {
-            obj.transform.position = startPos;
+            Destroy(obj);
             touched = false;
         }
 
