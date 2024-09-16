@@ -21,8 +21,8 @@ public class playerLook : MonoBehaviour
         //can we do this with arrow keys???
         Vector2 mouseInput = new Vector2
         {
-            x = Input.GetAxis("Mouse X"),
-            y = Input.GetAxis("Mouse Y")
+            x = Input.GetAxis("HorizontalCam"),
+            y = Input.GetAxis("VerticalCam")
         };
 
         XYRotation.x -= mouseInput.y * sensitivities.y;
